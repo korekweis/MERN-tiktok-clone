@@ -1,0 +1,19 @@
+.videoFooter { 
+    position: relative; 
+    color: white; 
+    bottom: 150px; 
+    margin-left: 40px; 
+    display: flex;
+}
+
+.videoFooter_text { 
+    flex: 1;
+}
+
+.videoFooter p { 
+    padding-bottom: 20px; 
+}
+
+.videoFooter h3 { 
+    padding-bottom: 20px;
+}
