@@ -1,0 +1,31 @@
+html { 
+  /* this is for when you scroll, it will just snap per video */
+  scroll-snap-type: y mandatory;
+}
+
+.App{ 
+  height: 100%; 
+  background-color: black;
+  display: grid;
+  place-items: center;
+}
+
+.app_videos { 
+  position: relative; 
+  height: 800px;
+  border-radius: 20px;
+  /* if the video is too long, it can be scrolled */
+  overflow: scroll; 
+  width: 80%;
+  max-width: 500px;
+  scroll-snap-type: y mandatory;
+}
+
+/* hide scrollbar for chrome and safari */
+.app_videos::-webkit-scrollbar{ 
+  display: none;
+}
+
+/* Video { 
+  height: 800px;
+} */

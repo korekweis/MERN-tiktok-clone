@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import Video from './Video';
 
 function App() {
   return (
     <div className="App">
-      <h1> MERN TIKTOK CLONE </h1>
-
+      <div className="app_videos">
+        <Video />
+        <Video />
+      </div>
       {/* app container */}
         {/* videos */}
     </div>
