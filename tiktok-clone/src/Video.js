@@ -1,8 +1,9 @@
 import React, { useRef, useState } from 'react';
 import "./Video.css";
 import VideoFooter from './VideoFooter';
+import VideoSideBar from './VideoSideBar';
 
-function Video() {
+function Video({ video_url, channel, description, song, likes, messages, shares }) {
     // use ref is for the video reference
     const videoRef = useRef(null);
     //this is used to check if the video is playing
@@ -28,11 +29,13 @@ function Video() {
                 onClick={ handleVideoPress }
                 loop 
                 ref={ videoRef }
-                src="https://assets.mixkit.co/videos/preview/mixkit-waves-in-the-water-1164-large.mp4">
+                src={ video_url }>
             </video>
             {/* video footer */}
-            <VideoFooter />
+            <VideoFooter channel={ channel } description={ description }
+                song={ song } />
             {/* video sidebar */}
+            <VideoSideBar likes={ likes } messages={ messages } shares={ shares }/>
         </div>
     )
 }

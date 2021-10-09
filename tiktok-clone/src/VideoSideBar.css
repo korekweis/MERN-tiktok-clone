@@ -1,0 +1,31 @@
+.videoSideBar { 
+    position: absolute;
+    top: 50%; 
+    right: 5px;
+    color: white;
+}
+
+.videoSideBar_button { 
+    padding: 20px;
+    text-align: center;
+}
+
+.videoFooter_record {
+    /* make an infinite loop and go from 0 deg to 360 in 5 seconds */
+    animation: spinTheRecord infinite 5s linear;
+    height: 50px;
+    /* filter: invert(1); */
+    /* position: absolute; */
+    margin-top: 100px;
+    bottom: 20px;
+    right: 5px;
+}
+
+@keyframes spinTheRecord { 
+    from{
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
+}

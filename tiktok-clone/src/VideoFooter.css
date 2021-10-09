@@ -3,11 +3,13 @@
     color: white; 
     bottom: 150px; 
     margin-left: 40px; 
+    width: 350px;
     display: flex;
 }
 
 .videoFooter_text { 
     flex: 1;
+    width: 300px;
 }
 
 .videoFooter p { 
@@ -16,4 +18,34 @@
 
 .videoFooter h3 { 
     padding-bottom: 20px;
+}
+
+.videoFooter_ticker .Ticker { 
+    height: fit-content;
+    margin-left: 90px;
+    width: 60%;
+}
+
+.videoFooter_icon {
+    position: absolute;
+}
+
+.videoFooter_record {
+    /* make an infinite loop and go from 0 deg to 360 in 5 seconds */
+    animation: spinTheRecord infinite 5s linear;
+    height: 50px;
+    /* filter: invert(1); */
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    align-self: right;
+}
+
+@keyframes spinTheRecord { 
+    from{
+        transform: rotate(0deg);
+    }
+    to { 
+        transform: rotate(360deg);
+    }
 }
